@@ -85,5 +85,7 @@ public class Student {
         System.out.println(student3.toString());
         student1.sayHi();
         viewCount();
+        // TODO: 28.04.2022 Тестирование создания ветки
+
     }
 }
