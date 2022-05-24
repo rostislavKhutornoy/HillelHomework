@@ -24,11 +24,11 @@ public class RandomPassword {
     private String getPassword() {
         int n = 8;
         char[] passwordArray = new char[n];
-        boolean num = false;
-        boolean upperL = false;
-        boolean lowerL = false;
         int underline = 0;
         while (true) {
+            boolean num = false;
+            boolean upperL = false;
+            boolean lowerL = false;
             for (int i = 0; i < n; i++) {
                 int randomSymbol = (int) (Math.random() * 4);
                 if (randomSymbol == 0) {
@@ -37,17 +37,17 @@ public class RandomPassword {
                 } else if (randomSymbol == 1) {
                     passwordArray[i] = getUpperLetter();
                     upperL = true;
-                } else if (randomSymbol == 2){
+                } else if (randomSymbol == 2) {
                     passwordArray[i] = getLowerLetter();
                     lowerL = true;
                 } else {
                     underline++;
-                    if(underline <= 2) {
+                    if (underline <= 2) {
                         passwordArray[i] = '_';
                     } else passwordArray[i] = getNumber();
                 }
             }
-            if (num && upperL && lowerL) {
+            if(num && upperL && lowerL) {
                 break;
             }
         }
