@@ -1,4 +1,4 @@
-import Cat.Get;
+import GetSomething.Get;
 import java.io.IOException;
 
 public class Person {
