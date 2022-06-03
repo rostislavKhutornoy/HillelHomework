@@ -11,13 +11,11 @@ public class Transpose {
 
     private int getNumber() throws IOException {
         int number = 0;
-        boolean valid = true;
-        while (valid) {
+        while (true) {
             try {
                 number = Integer.parseInt(READER.readLine());
                 break;
             } catch (Exception exception) {
-                valid = false;
                 System.out.println("Invalid input, please enter a numeric value!");
             }
         }

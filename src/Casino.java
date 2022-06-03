@@ -11,14 +11,12 @@ public class Casino {
         System.out.println("Please fill in your ticket with numbers: ");
         for (int i = 0; i < array.length; i++) {
             while (true) {
-                boolean valid = false;
-                while (!valid) {
+                while (true) {
                     try {
-                        valid = true;
                         array[i] = Integer.parseInt(READER.readLine());
+                        break;
                     } catch (Exception exception) {
                         System.out.println("You can enter only number from 0 to 9!");
-                        valid = false;
                     }
                 }
                 if (array[i] < 0 || array[i] > 9) {
