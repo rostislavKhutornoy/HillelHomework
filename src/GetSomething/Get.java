@@ -1,5 +1,7 @@
 package GetSomething;
 
+/*Просто вспомогательный класс для валидации ввода*/
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
